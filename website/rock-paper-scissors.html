@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Rock Paper Scissors</title>
+    <link 
+    rel="stylesheet" 
+    href="/website/css/jack-website.css"><link
+    rel="stylesheet"
+    href="/website/css/rock-paper-scissors.css">
+    
+  </head>
+  <body>
+
+    <header>
+      <a href="/website/index.html" class="logo"> Gavin Jack Sullivan </a>
+
+      <u1>
+        <a href="/website/about-me.html"> About Me </a>
+        <a href="/website/projects.html"> Projects </a>
+        <a href="/website/contact-info.html"> Contact Info</a>
+      </u1>
+    </header>
+
+    <div class="rock-paper-scissors-game">
+      <p class="RPS">Rock Paper Scissors</p>
+      <button onclick="
+        playGame('✊');
+      " class = "move-icon"
+      >✊</button>
+
+      <button onclick="
+        playGame('✋');
+      " class = "move-icon"
+      >✋</button>
+
+      <button onclick="
+        playGame('✌️');
+      " class = "move-icon"
+      >✌️</button>
+
+      <p class="js-result result"></p>
+      <p class="js-moves"></p>
+      <p class="js-score score"></p>
+
+      <button onclick="
+        score.wins = 0;
+        score.losses = 0;
+        score.ties = 0;
+        localStorage.removeItem('score');
+        updateScoreElement();
+        "class = "reset-score-button"
+      >Reset Score</button>
+    </div>
+
+    <script src="/website/js/rock-paper-scissors.js"></script>
+    <script src="/website/js/jack-website.js"></script>
+  </body>
+</html>
