@@ -1,150 +1,150 @@
 
-.intro {
+
+body{
+  background-color: #382933;
+}
+
+
+
+
+.main-page-img{
+  height: 40rem;
+  width: 30rem;
+  border-radius: 5rem;
+  margin-left: 3rem;
+  position: relative;
+  top: 20%;
+  transform: translate(0%, 20%);
+}
+.intro-name {
+  color: #3B5249;
+  font-size: 40px;
   position: absolute;
-  top: 5rem;
-  left: 0;
+  top: 20%;
+  left: 50%;
   right: 0;
-
-  background-image: url(/website/img/coding-background.jpeg);
-
-  height: 750px;
-
-  z-index: 9;
-
-  box-shadow: 0 0 20px 2px rgb(255, 2, 225);
+}
+.intro-name-1 {
+  color: #A4B494;
+  margin-left: 5px;
+  font-size: 40px;
+}
+.intro-name-2{
+  color: #519872;
+  margin-left: 5px;
+  font-size: 40px;
 }
 
-.main-page-img {
-  display: flex;
-  justify-content: center;
-
- border-radius: 500px;
- height: 500px;
- 
-
- margin-top: 50px;
-
- 
-}
-
-.job-title-1{
-  display: flex;
-  justify-content: center;
-
-  margin-top: -525px;
-
-
-  color: rgb(255, 0, 0);
-  text-shadow: rgb(0, 254, 21) 3px 0 10px;
-
-  font-family: fantasy;
-  font-weight: bold;
-  font-size: 50px;
-}
-
-.job-title-2 {
-  display: flex;
-  justify-content: center;
-
-  margin-top: 475px;
-
-
-  color: rgb(255, 0, 0);
-  text-shadow: rgb(0, 254, 21) 3px 0 10px;
-
-  font-family: fantasy;
-  font-weight: bold;
-  font-size: 50px;
-}
-
-.projects-section {
-position: absolute;
-top: 51.875rem;
-left: 0;
-right: 0;
-
-height: 30rem;
-
-background-image: url(/website/img/projects-background.jpeg);
-background-size: 100%;
-
-box-shadow: 0 0 20px 2px rgb(255, 2, 225);
-
-
-z-index: 8;
-
-}
-
-.projects-section-header {
-  display: flex;
-  justify-content: center;
-
-  
-  color: rgb(9, 8, 8);
-  font-family: fantasy;
-  text-shadow: rgb(255, 0, 0) 1px 0 1px;
-} 
-
-.RPS-img-projects {
-  height: 10rem;
-  width: 10rem;
-  border-radius: 10px;
-  margin-left: 10px;
-  
-  box-shadow: 0 0 5px 1px rgb(255, 0, 0);
-}
-
-.aboutme-section {
+.intro-text {
   position: absolute;
-  top: 81.875rem;
-  left: 0;
-  right: 0;
-
-  height: 20rem;
-  background-color: rgb(180, 180, 180);
-  box-shadow: 0 0 20px 2px rgb(255, 2, 225);
-
-  z-index: 7;
+  top: 35%;
+  left: 51%;
+  right: 7%;
+  color: #A4B494;
+  font-size: 30px;
 }
 
-.aboutme-section-header {
-  display: flex;
-  justify-content: center;
-
-  color: rgb(9, 8, 8);
-  font-family: fantasy;
-  text-shadow: rgb(255, 0, 0) 1px 0 1px;
-}
-
-.aboutme-section-text {
-  color: black;
-  padding: 0 2rem;
-
-  text-shadow: rgb(0, 254, 21).1px 0 1px;
-}
-
-.aboutme-section-button {
- display: flex;
- justify-content: center;
-
+.left-arrow{
+  height: 4rem;
+  mix-blend-mode: color-burn;
   background-color: transparent;
-  border-radius: 500px;
-  margin-top: 3rem;
-  
-  padding: 10px;
-  border: none;
-  box-shadow: 0 0 10px 1px rgb(255, 2, 225);
-  cursor: pointer;
-  font-family: fantasy;
-
-  text-shadow: rgb(0, 254, 21).1px 0 1px;
+  position: relative;
+  top: 150%;
+  transform: translate(0%, 150%);
+}
+.right-arrow{
+  height: 4rem;
+  mix-blend-mode: color-burn;
+  background-color: transparent;
+  position: relative;
+  top: 150%;
+  left: 95%;
+  transform: translate(0%, 150%);
 }
 
-.aboutme-section-button-parent {
+.contact-info-section-img-parent{
   display: flex;
   justify-content: center;
 }
 
-.aboutme-section-button-a {
-  text-decoration: none;
+
+
+@media only screen and (max-width: 1300px) {
+  .intro-name {
+    font-size: 35px;
+  }
+  .intro-name-1 {
+    font-size: 35px;
+  }
+  .intro-name-2 {
+    font-size: 35px;
+  }
+  .intro-text {
+    font-size: 25px;
+  }
+}
+
+@media only screen and (max-width: 1120px) {
+ .main-page-img {
+  height: 35rem;
+  width: 25rem;
+ }
+}
+
+@media only screen and (max-width: 935px) {
+  .intro-name{
+    font-size: 30px;
+  }
+  .intro-name-1 {
+    font-size: 30px;
+  }
+  .intro-name-2 {
+    font-size: 30px;
+  }
+  .intro-text {
+    font-size: 20px;
+  }
+}
+
+@media only screen  and (max-width:920px) {
+  .main-page-img {
+    margin-left: 1rem;
+    height: 30rem;
+    width: 20rem;
+  }
+}
+
+@media only screen and (max-width:750px) {
+  .main-page-img {
+    border-radius: 500px;
+    height: 35rem;
+    width: 25rem;
+    margin: none;
+  }
+  .intro-name{
+    top: 50rem;
+    left: 0;
+    text-align: center;
+  }
+  
+  .intro-text {
+    top: 56rem;
+    left: 5%;
+    right: 5%;
+    text-align: center;
+  }
+  .right-arrow {
+    top: 23rem;
+  }
+  .main-page-img-parent {
+    display: flex;
+    justify-content: center;
+  }
+}
+
+@media  only screen  and (max-width: 350px) {
+  .main-page-img {
+    height: 30rem;
+    width: 20rem;
+  }
 }

@@ -1,12 +1,10 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>
-      Projects
-    </title>
-    <link rel="stylesheet" href="/website/css/jack-website.css"><link rel="stylesheet" href="/website/css/projects-page.css">
+    <title>Todo List</title>
+    <link rel="stylesheet" href="/website/css/jack-website.css">
+    <link rel="stylesheet" href="/website/css/todo-list.css">
   </head>
-
   <body>
     <header>
       <a href="/website/index.html" class="logo header"> Gavin Jack Sullivan </a>
@@ -28,14 +26,22 @@
         <br><a href="/website/reference-login.html" class="header-link"> References</a>
       </ul>
     </div>
-   <div class="projects-body js-projects-body">
-    </div> 
 
-    
+    <h2 class="todo-header">Todo List</h2>
+
+    <div class="todo-input-grid">
+      <input placeholder="Todo name"
+        class="js-name-input name-input">
+      <input type="date"
+        class="js-due-date-input due-date-input">
+      <button onclick="
+        addTodo();
+      " class="add-todo-button">Add</button>
     </div>
 
+    <div class="js-todo-list todo-grid"></div>
 
+    <script src="/website/js/todo-list.js"></script>
+    <script src="/website/js/jack-website.js"></script>
   </body>
-  <script src="/website/js/jack-website.js"></script>
-  <script src="/website/js/projects.js"></script>
 </html>
